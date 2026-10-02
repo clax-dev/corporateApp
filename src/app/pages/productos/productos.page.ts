@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonCol, IonContent, IonGrid, IonHeader, IonRow, IonTitle, IonToolbar } from '@ionic/angular';
@@ -13,12 +13,12 @@ import { Product } from '../../models/product.interface';
 })
 export class ProductosPage implements OnInit {
 
-  products: Product[] = [];
+  products = signal<Product[]>([]);
 
   constructor(private productService: ProductsService) { }
 
   async ngOnInit() {
-    this.products = await this.productService.getProducts();
+    this.products.set(await this.productService.getProducts());
   }
 
 }
