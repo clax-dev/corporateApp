@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nombre": "Portátil Dell", "unidades": 12, "precio": 1200, "foto": "https://picsum.photos/seed/dell/160/120", "vendedor": "Ana López" },
+  { "id": 2, "nombre": "Monitor LG", "unidades": 8, "precio": 299, "foto": "https://picsum.photos/seed/lg/160/120", "vendedor": "Carlos Pérez" },
+  { "id": 3, "nombre": "Teclado Logitech", "unidades": 25, "precio": 49, "foto": "https://picsum.photos/seed/logi/160/120", "vendedor": "Marta Ruiz" }
+]
